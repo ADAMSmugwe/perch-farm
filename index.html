@@ -1,0 +1,2277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perch Poultry Farm - Premium Poultry Products in Eldoret, Kenya</title>
+    <meta name="description" content="Perch Poultry Farm in Eldoret, Kenya offers premium quality eggs, chicken, and poultry products from ethically raised chickens. Free-range, organic, and locally sourced.">
+    <meta name="keywords" content="poultry farm, Eldoret, Kenya, fresh eggs, organic chicken, free-range, poultry products">
+    <meta property="og:title" content="Perch Poultry Farm - Premium Poultry Products">
+    <meta property="og:description" content="Ethically raised poultry products in Eldoret, Kenya">
+    <meta property="og:image" content="https://perchpoultry.co.ke/images/social-preview.jpg">
+    <meta property="og:url" content="https://perchpoultry.co.ke">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        /* Modern CSS Variables */
+        :root {
+            --primary: #3a7d44;
+            --primary-light: #5d9c67;
+            --secondary: #f8c537;
+            --secondary-dark: #e6b325;
+            --dark: #2c3e50;
+            --darker: #1a252f;
+            --light: #f9f9f9;
+            --lighter: #ffffff;
+            --accent: #e74c3c;
+            --text: #333333;
+            --text-light: #777777;
+            --text-lighter: #aaaaaa;
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+            --shadow-md: 0 5px 15px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            --transition-fast: all 0.15s ease;
+            --radius: 10px;
+            --radius-lg: 16px;
+            --glass: rgba(255, 255, 255, 0.15);
+            --glass-border: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Dark Mode Variables */
+        [data-theme="dark"] {
+            --dark: #f8f9fa;
+            --darker: #e9ecef;
+            --light: #212529;
+            --lighter: #343a40;
+            --text: #f8f9fa;
+            --text-light: #e9ecef;
+            --text-lighter: #dee2e6;
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+            --shadow-md: 0 5px 15px rgba(0, 0, 0, 0.3);
+            --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.4);
+            --glass: rgba(0, 0, 0, 0.15);
+            --glass-border: rgba(0, 0, 0, 0.2);
+        }
+
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.7;
+            color: var(--text);
+            background-color: var(--light);
+            overflow-x: hidden;
+            transition: background-color 0.3s ease;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+            color: var(--text-light);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition-fast);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Utility Classes */
+        .text-center {
+            text-align: center;
+        }
+
+        .text-primary {
+            color: var(--primary);
+        }
+
+        .bg-primary {
+            background-color: var(--primary);
+        }
+
+        .bg-light {
+            background-color: var(--light);
+        }
+
+        .bg-dark {
+            background-color: var(--dark);
+            color: white;
+        }
+
+        .section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--dark);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            border-radius: 2px;
+        }
+
+        .section-title p {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 30px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .btn::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            z-index: -1;
+            transition: var(--transition);
+        }
+
+        .btn:hover::after {
+            opacity: 0.9;
+            transform: scale(1.05);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+            color: white;
+        }
+
+        .btn:active {
+            transform: translateY(1px);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: white;
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, var(--secondary), var(--secondary-dark));
+            color: var(--dark);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-icon {
+            margin-left: 8px;
+            font-size: 0.9em;
+        }
+
+        /* Header Styles */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: var(--lighter);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        header.scrolled {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow-md);
+        }
+
+        [data-theme="dark"] header.scrolled {
+            background-color: rgba(33, 37, 41, 0.95);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+
+        .logo-text h1 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 0;
+        }
+
+        .logo-text span {
+            color: var(--secondary);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links a {
+            font-weight: 600;
+            padding: 5px 0;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--dark);
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        /* Theme Toggle */
+        .theme-toggle {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+
+        .theme-toggle i {
+            font-size: 1.2rem;
+            color: var(--dark);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            min-height: 700px;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            color: white;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(transparent, var(--light));
+            z-index: 1;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            line-height: 1.2;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: rgba(255, 255, 255, 0.9);
+            animation: fadeInUp 1s ease 0.2s forwards;
+            opacity: 0;
+        }
+
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            animation: fadeInUp 1s ease 0.4s forwards;
+            opacity: 0;
+        }
+
+        .scroll-down {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 1.5rem;
+            animation: bounce 2s infinite;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-img {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            height: 500px;
+        }
+
+        .about-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .about-img:hover img {
+            transform: scale(1.05);
+        }
+
+        .about-text h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+
+        .about-features {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            background: var(--lighter);
+            padding: 20px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .feature-icon {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-right: 15px;
+            margin-top: 5px;
+        }
+
+        .feature-text h4 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            color: var(--dark);
+        }
+
+        /* Stats Counter */
+        .stats {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+        }
+
+        .stat-item {
+            padding: 20px;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .stat-text {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Products Section */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background-color: var(--lighter);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .product-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: var(--accent);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            z-index: 2;
+        }
+
+        .product-img {
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .product-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .product-card:hover .product-img img {
+            transform: scale(1.1);
+        }
+
+        .product-info {
+            padding: 25px;
+        }
+
+        .product-info h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+
+        .product-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .product-price {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        /* Gallery Section */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            height: 250px;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-overlay i {
+            color: white;
+            font-size: 2rem;
+        }
+
+        /* Testimonials Section */
+        .testimonials-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .testimonial-slide {
+            background-color: var(--lighter);
+            padding: 30px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+            margin: 0 20px;
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .testimonial-slide:hover {
+            box-shadow: var(--shadow-md);
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            color: var(--text-light);
+            font-size: 1.1rem;
+            position: relative;
+        }
+
+        .testimonial-text::before,
+        .testimonial-text::after {
+            content: '"';
+            font-size: 2rem;
+            color: var(--primary);
+            opacity: 0.3;
+            position: absolute;
+        }
+
+        .testimonial-text::before {
+            top: -15px;
+            left: -10px;
+        }
+
+        .testimonial-text::after {
+            bottom: -25px;
+            right: -10px;
+        }
+
+        .testimonial-author {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .author-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 15px;
+            border: 3px solid var(--primary);
+        }
+
+        .author-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .author-info h4 {
+            font-size: 1.2rem;
+            color: var(--dark);
+            margin-bottom: 5px;
+        }
+
+        .author-info p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+
+        /* Partners Section */
+        .partners {
+            background-color: var(--lighter);
+            padding: 60px 0;
+        }
+
+        .partners-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            padding: 0 20px;
+        }
+
+        .partner-item {
+            flex: 0 0 auto;
+            max-width: 180px;
+            opacity: 0.7;
+            transition: var(--transition);
+            filter: grayscale(100%);
+        }
+
+        .partner-item:hover {
+            opacity: 1;
+            filter: grayscale(0%);
+        }
+
+        .partner-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Newsletter Section */
+        .newsletter {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .newsletter-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .newsletter h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .newsletter p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 30px;
+        }
+
+        .newsletter-form {
+            display: flex;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 50px 0 0 50px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        .newsletter-form .btn {
+            border-radius: 0 50px 50px 0;
+            padding: 15px 25px;
+        }
+
+        /* Contact Section */
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        .contact-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+
+        .contact-details {
+            margin-bottom: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            background: var(--lighter);
+            padding: 20px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .contact-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-right: 15px;
+            margin-top: 5px;
+        }
+
+        .contact-text h4 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            color: var(--dark);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background-color: var(--light);
+            border-radius: 50%;
+            color: var(--primary);
+            transition: var(--transition);
+            font-size: 1.2rem;
+        }
+
+        .social-links a:hover {
+            background-color: var(--primary);
+            color: white;
+            transform: translateY(-5px);
+        }
+
+        .contact-form .form-group {
+            margin-bottom: 20px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px 20px;
+            border: 1px solid #ddd;
+            border-radius: var(--radius);
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1rem;
+            transition: var(--transition);
+            background-color: var(--lighter);
+            color: var(--text);
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(58, 125, 68, 0.2);
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        /* Map Section */
+        .map-container {
+            height: 500px;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            margin-top: 60px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--darker);
+            color: white;
+            padding: 80px 0 30px;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+            color: white;
+        }
+
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+        }
+
+        .footer-col p {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 15px;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            transition: var(--transition);
+            display: inline-block;
+        }
+
+        .footer-links a:hover {
+            color: white;
+            transform: translateX(5px);
+        }
+
+        .footer-social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .footer-social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            transition: var(--transition);
+        }
+
+        .footer-social-links a:hover {
+            background-color: var(--primary);
+            transform: translateY(-5px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+        }
+
+        /* Modal */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .modal.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal-content {
+            position: relative;
+            width: 90%;
+            max-width: 900px;
+            background-color: var(--lighter);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            transform: scale(0.8);
+            transition: all 0.3s ease;
+        }
+
+        .modal.active .modal-content {
+            transform: scale(1);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 2;
+            transition: var(--transition);
+        }
+
+        .modal-close:hover {
+            background-color: var(--accent);
+            transform: rotate(90deg);
+        }
+
+        .modal-video {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .modal-video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Page Transitions */
+        .page {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0) translateX(-50%);
+            }
+            40% {
+                transform: translateY(-20px) translateX(-50%);
+            }
+            60% {
+                transform: translateY(-10px) translateX(-50%);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 992px) {
+            .about-content,
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .about-img {
+                order: -1;
+                height: 400px;
+            }
+
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+
+            .section {
+                padding: 80px 0;
+            }
+
+            .section-title h2 {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 0;
+                left: -100%;
+                width: 80%;
+                max-width: 300px;
+                height: 100vh;
+                background-color: var(--lighter);
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                padding: 80px 30px;
+                transition: var(--transition);
+                z-index: 1000;
+                box-shadow: var(--shadow-lg);
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .nav-links li {
+                margin: 15px 0;
+            }
+
+            .hero-btns {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+            }
+
+            .newsletter-form input {
+                border-radius: 50px;
+                margin-bottom: 10px;
+            }
+
+            .newsletter-form .btn {
+                border-radius: 50px;
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+
+            .stats-container {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .modal-content {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                
+                <div class="logo-text">
+                    <h1>Perch <span>Poultry</span></h1>
+                </div>
+            </div>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+                    <li><a href="#" class="nav-link" data-page="about">About Us</a></li>
+                    <li><a href="#" class="nav-link" data-page="products">Our Products</a></li>
+                    <li><a href="#" class="nav-link" data-page="gallery">Gallery</a></li>
+                    <li><a href="#" class="nav-link" data-page="testimonials">Testimonials</a></li>
+                    <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
+                </ul>
+                <div class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Page -->
+    <section class="page active" id="home-page">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Perch Poultry Farm , Eldoret</h1>
+                    <p>At Perch Poultry Farm, we deliver the freshest, highest quality poultry products straight from our farm to your table. Our commitment to ethical farming practices ensures healthy, happy chickens and delicious eggs.</p>
+                    <div class="hero-btns">
+                        <a href="#" class="btn btn-primary" data-page="products">
+                            Our Products
+                            <i class="fas fa-arrow-right btn-icon"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline" data-page="contact">
+                            Contact Us
+                            <i class="fas fa-phone btn-icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <a href="#about-section" class="scroll-down">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about" id="about-section" data-aos="fade-up">
+            <div class="container">
+                <div class="section-title">
+                    <h2>About Our Farm</h2>
+                    <p>Discover the story behind Perch Poultry Farm and our commitment to sustainable, ethical poultry farming practices.</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Quality Poultry Farming Since 2010</h3>
+                        <p>Founded in 2010, Perch Poultry Farm has grown from a small family operation to one of Eldoret's most trusted poultry producers. Our farm spans over 50 acres of lush Kenyan countryside, providing the perfect environment for our chickens to thrive.</p>
+                        <p>We believe in sustainable farming practices that prioritize animal welfare, environmental responsibility, and community development. All our poultry is raised without antibiotics or hormones, with access to open spaces and natural feed.</p>
+                        <div class="about-features">
+                            <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                                <div class="feature-icon">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Organic Feed</h4>
+                                    <p>Locally sourced, chemical-free feed for healthier poultry</p>
+                                </div>
+                            </div>
+                            <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="feature-icon">
+                                    <i class="fas fa-hand-holding-heart"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Ethical Treatment</h4>
+                                    <p>Humane conditions with ample space to roam</p>
+                                </div>
+                            </div>
+                            <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                                <div class="feature-icon">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Quality Standards</h4>
+                                    <p>Certified by Kenya Bureau of Standards</p>
+                                </div>
+                            </div>
+                            <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                                <div class="feature-icon">
+                                    <i class="fas fa-truck"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Local Delivery</h4>
+                                    <p>Fresh products delivered within 24 hours</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-img" data-aos="fade-left">
+                        <img src="image.jpg/About us photo.jpg" alt="Perch Poultry Farm" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats" data-aos="fade-up">
+            <div class="container">
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <div class="stat-number" id="happyCustomers">5000+</div>
+                        <div class="stat-text">Happy Customers</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="eggsProduced">2M+</div>
+                        <div class="stat-text">Eggs Produced Annually</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="farmSize">50</div>
+                        <div class="stat-text">Acres of Farm Land</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="yearsExperience">13</div>
+                        <div class="stat-text">Years of Experience</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Preview Section -->
+        <section class="section products" data-aos="fade-up">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Premium Products</h2>
+                    <p>Explore our range of high-quality poultry products that are loved by households and restaurants across Eldoret.</p>
+                </div>
+                <div class="products-grid">
+                    <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="product-badge">Best Seller</div>
+                        <div class="product-img">
+                            <img src="image.jpg/Eggs poducts.jpg" alt="Fresh Eggs" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Fresh Eggs</h3>
+                            <p>Daily collected, nutrient-rich eggs from free-range hens with rich golden yolks and superior nutritional content.</p>
+                            <div class="product-meta">
+                                <div class="product-price">KSh 15 per egg</div>
+                                <a href="#" class="btn btn-primary" data-page="products">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="product-img">
+                            <img src="image.jpg/whole chicken. products.jpg" alt="Whole Chicken" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Whole Chicken</h3>
+                            <p>Fresh, antibiotic-free chickens processed to highest standards with optimal flavor and texture.</p>
+                            <div class="product-meta">
+                                <div class="product-price">KSh 800 per kg</div>
+                                <a href="#" class="btn btn-primary" data-page="products">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="product-badge">Popular</div>
+                        <div class="product-img">
+                            <img src="image.jpg/chicken wings.jpg" alt="Chicken Parts" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Chicken Parts</h3>
+                            <p>Breasts, thighs, wings, and drumsticks for every recipe, carefully processed to preserve quality.</p>
+                            <div class="product-meta">
+                                <div class="product-price">From KSh 450/kg</div>
+                                <a href="#" class="btn btn-primary" data-page="products">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 40px;">
+                    <a href="#" class="btn btn-secondary" data-page="products">
+                        View All Products
+                        <i class="fas fa-arrow-right btn-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- About Us Page -->
+    <section class="page" id="about-page">
+        <section class="section about-page" data-aos="fade-up">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Story</h2>
+                    <p>Learn more about our journey, values, and commitment to excellence in poultry farming.</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-img" data-aos="fade-right">
+                        <img src="image.jpg/Humble begginings.jpg" alt="Farm History" loading="lazy">
+                    </div>
+                    <div class="about-text" data-aos="fade-left">
+                        <h3>From Humble Beginnings</h3>
+                        <p>Perch Poultry Farm was founded in 2010 by Bob and Gladys Toroitich with just 50 chickens in their backyard. What began as a small family project to provide eggs for their local community has grown into one of Eldoret's most respected poultry operations.</p>
+                        <p>Today, we manage over 10,000 chickens across our 50-acre farm, supplying fresh eggs and poultry to households, restaurants, and supermarkets throughout Uasin Gishu County and beyond.</p>
+                        <p>Despite our growth, we've maintained our commitment to small-scale, ethical farming practices that prioritize animal welfare and environmental sustainability.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section values" style="background-color: var(--light);" data-aos="fade-up">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Values</h2>
+                    <p>The principles that guide everything we do at Perch Poultry Farm.</p>
+                </div>
+                <div class="values-grid">
+                    <div class="value-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Animal Welfare</h3>
+                        <p>We provide spacious, clean environments with access to outdoor areas. Our chickens are never caged and are free to express natural behaviors.</p>
+                    </div>
+                    <div class="value-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3>Sustainability</h3>
+                        <p>We use solar power, rainwater harvesting, and compost all waste to minimize our environmental impact and create a closed-loop system.</p>
+                    </div>
+                    <div class="value-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Community</h3>
+                        <p>We support local farmers through training programs and source all our feed from nearby suppliers to strengthen the regional economy.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section team" data-aos="fade-up">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Meet Our Team</h2>
+                    <p>The dedicated people behind Perch Poultry Farm's success.</p>
+                </div>
+                <div class="team-grid">
+                    <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+                        <div class="author-img">
+                            <img src="image.jpg/Bob Toroitich.jpg" alt="Bob Toroitich" loading="lazy">
+                        </div>
+                        <h3>Bob Toroitich</h3>
+                        <p class="text-primary" style="font-weight: 600;">Founder & CEO</p>
+                        <p>With over 20 years in agriculture, Bob's vision drives our farm's commitment to quality and sustainability.</p>
+                    </div>
+                    <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+                        <div class="author-img">
+                            <img src="image.jpg/philemon sigei.jpg" alt="Philemon Sigei" loading="lazy">
+                        </div>
+                        <h3>Philemon Sigei</h3>
+                        <p class="text-primary" style="font-weight: 600;">Operations Manager</p>
+                        <p>Philemon ensures our daily operations meet the highest standards of animal care and food safety.</p>
+                    </div>
+                    <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+                        <div class="author-img">
+                            <img src="image.jpg/gladys muthoni.jpg" alt="Gladys Muthoni" loading="lazy">
+                        </div>
+                        <h3>Gladys Muthoni</h3>
+                        <p class="text-primary" style="font-weight: 600;">Head Veterinarian</p>
+                        <p>Gladys oversees flock health with preventive care and natural remedies whenever possible.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="section partners" data-aos="fade-up">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Certifications</h2>
+                    <p>Recognized for quality and ethical farming practices.</p>
+                </div>
+                <div class="partners-grid">
+                    <div class="partner-item">
+                        <img src="data:image/png;base64,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" alt="KEBS Certified" loading="lazy">
+                    </div>
+                    <div class="partner-item">
+                        <img src="data:image/jpeg;base64,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" alt="Organic Certified" loading="lazy">
+                    </div>
+                    <div class="partner-item">
+                        <img src="data:image/png;base64,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" alt="Animal Welfare Approved" loading="lazy">
+                    </div>
+                    <div class="partner-item">
+                        <img src="data:image/png;base64,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" alt="Local Chamber of Commerce" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Products Page -->
+    <section class="page" id="products-page">
+        <section class="section products" data-aos="fade-up">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Products</h2>
+                    <p>Premium poultry products raised with care and delivered fresh to you.</p>
+                </div>
+                <div class="products-grid">
+                    <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="product-badge">Best Seller</div>
+                        <div class="product-img">
+                            <img src="image.jpg/EGG collection.jpg" alt="Fresh Eggs" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Fresh Eggs</h3>
+                            <p>Our free-range hens produce eggs with rich, golden yolks and superior nutritional content. Collected daily and delivered fresh.</p>
+                            <ul style="margin-bottom: 15px; color: var(--text-light); padding-left: 20px;">
+                                <li style="margin-bottom: 5px; list-style-type: disc;">Packed in eco-friendly cartons</li>
+                                <li style="margin-bottom: 5px; list-style-type: disc;">Available in sizes: Medium, Large, Jumbo</li>
+                                <li style="margin-bottom: 5px; list-style-type: disc;">Rich in omega-3 fatty acids</li>
+                            </ul>
+                            <div class="product-meta">
+                                <div class="product-price">KSh 15 per egg | KSh 840 per tray (60 eggs)</div>
+                                <a href="#" class="btn btn-primary" data-page="contact">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="product-badge">Popular</div>
+                        <div class="product-img">
+                            <img src="image.jpg/whole chicken. products.jpg" alt="Whole Chicken" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Whole Chicken</h3>
+                            <p>Our chickens are raised slowly for optimal flavor and texture, with no antibiotics or growth hormones ever used.</p>
+                            <ul style="margin-bottom: 15px; color: var(--text-light); padding-left: 20px;">
+                                <li style="margin-bottom: 5px; list-style-type: disc;">Processed to highest hygiene standards</li>
+                                <li style="margin-bottom: 5px; list-style-type: disc;">Available fresh or frozen</li>
+                                <li style="margin-bottom: 5px; list-style-type: disc;">Average weight: 1.5-2kg</li>
+                            </ul>
+                            <div class="product-meta">
+                                <div class="product-price">KSh 800 per kg</div>
+                                <a href="#" class="btn btn-primary" data-page="contact">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="product-img">
+                            <img src="image.jpg/chicken wings.jpg" alt="Chicken Parts" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Chicken Parts</h3>
+                            <p>Conveniently portioned cuts for every recipe. Our chicken parts are carefully processed to preserve quality and freshness.</p>
+                            <ul style="margin-bottom: 15px; color: var(--text-light); padding-left: 20px;">
+                                <li style="margin-bottom: 5px; list-style-type: disc;">Breasts: KSh 600/kg</li>
+                                <li style="margin-bottom: 5px; list-style-type: disc;">Thighs: KSh 550/kg</li>
+                                <li style="margin-bottom: 5px; list-style-type: disc;">Drumsticks: KSh 500/kg</li>
+                                <li style="margin-bottom: 5px; list-style-type: disc;">Wings: KSh 450/kg</li>
+                            </ul>
+                            <div class="product-meta">
+                                <div class="product-price">From KSh 450 per kg</div>
+                                <a href="#" class="btn btn-primary" data-page="contact">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="product-badge">New</div>
+                        <div class="product-img">
+                            <img src="image.jpg/Processed chicken wings.jpg" alt="Processed Products" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Processed Products</h3>
+                            <p>Our range of value-added products for convenience without compromising on quality.</p>
+                            <ul style="margin-bottom: 15px; color: var(--text-light); padding-left: 20px;">
+                                <li style="margin-bottom: 5px; list-style-type: disc;">Chicken Sausages: KSh 700/kg</li>
+                                <li style="margin-bottom: 5px; list-style-type: disc;">Chicken Burgers: KSh 650/kg</li>
+                                <li style="margin-bottom: 5px; list-style-type: disc;">Marinated Chicken: KSh 750/kg</li>
+                                <li style="margin-bottom: 5px; list-style-type: disc;">Chicken Soup Packs: KSh 500/pack</li>
+                            </ul>
+                            <div class="product-meta">
+                                <div class="product-price">From KSh 500 per unit</div>
+                                <a href="#" class="btn btn-primary" data-page="contact">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section ordering" style="background-color: var(--light);" data-aos="fade-up">
+            <div class="container">
+                <div class="section-title">
+                    <h2>How To Order</h2>
+                    <p>Simple steps to get our fresh products delivered to your home or business.</p>
+                </div>
+                <div class="steps-grid">
+                    <div class="step" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-icon">
+                            <i class="fas fa-shopping-basket"></i>
+                        </div>
+                        <h3>Select Products</h3>
+                        <p>Choose from our range of fresh eggs, whole chickens, or chicken parts.</p>
+                    </div>
+                    <div class="step" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Contact Us</h3>
+                        <p>Call, WhatsApp, or fill out our contact form with your order details.</p>
+                    </div>
+                    <div class="step" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>Confirm Order</h3>
+                        <p>We'll confirm availability, pricing, and delivery schedule.</p>
+                    </div>
+                    <div class="step" data-aos="fade-up" data-aos-delay="400">
+                        <div class="feature-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h3>Receive Delivery</h3>
+                        <p>Fresh products delivered to your doorstep within 24 hours.</p>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 40px;">
+                    <a href="#" class="btn btn-secondary" data-page="contact">
+                        Place Your Order
+                        <i class="fas fa-arrow-right btn-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Gallery Page -->
+    <section class="page" id="gallery-page">
+        <section class="section gallery" data-aos="fade-up">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Farm Gallery</h2>
+                    <p>A visual journey through our farm, processes, and happy chickens.</p>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+                        <img src="image.jpg/free range chickens 2.jpg" alt="Farm Overview" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+                        <img src="image.jpg/free range chickens 1.jpg" alt="Free Range Chickens" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="300">
+                        <img src="image.jpg/EGG collection.jpg" alt="Egg Collection" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="400">
+                        <img src="image.jpg/eggs image 2.jpg" alt="Processing Facility" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Chicken Coops" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+                        <img src="image.jpg/philemon sigei.jpg" alt="Farm Team" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="300">
+                        <img src="image.jpg/Eggs poducts.jpg" alt="Product Packaging" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="400">
+                        <img src="image.jpg/chicken image 4.jpg" alt="Fresh Eggs" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section video-tour" style="background-color: var(--light);" data-aos="fade-up">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Virtual Farm Tour</h2>
+                    <p>Take a behind-the-scenes look at our operations and meet our chickens.</p>
+                </div>
+                <div style="max-width: 800px; margin: 0 auto; box-shadow: var(--shadow-lg); border-radius: var(--radius-lg); overflow: hidden; cursor: pointer;" id="videoThumbnail">
+                    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                        <video src="https://youtu.be/-NlzEV6fZes?si=ZaFF-tz-UW5AbRGi">Virtual Tour</video>
+                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.3); display: flex; justify-content: center; align-items: center;">
+                            <div style="width: 80px; height: 80px; background-color: var(--primary); border-radius: 50%; display: flex; justify-content: center; align-items: center; transition: var(--transition);">
+                                <i class="fas fa-play" style="color: white; font-size: 2rem; margin-left: 5px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Testimonials Page -->
+    <section class="page" id="testimonials-page">
+        <section class="section testimonials" data-aos="fade-up">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Customer Testimonials</h2>
+                    <p>Hear what our customers say about Perch Poultry Farm products.</p>
+                </div>
+                <div class="testimonials-container" id="testimonials-slider">
+                    <div class="testimonial-slide">
+                        <p class="testimonial-text">"I've been buying eggs from Perch Poultry for over 3 years now, and the quality is consistently excellent. The yolks are so rich and orange compared to supermarket eggs. My family can taste the difference!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-img">
+                                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Sarah W." loading="lazy">
+                            </div>
+                            <div class="author-info">
+                                <h4>Sarah W.</h4>
+                                <p>Eldoret Resident</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <p class="testimonial-text">"As a restaurant owner, I need reliable suppliers who provide top-quality ingredients. Perch Poultry has never let me down. Their chicken is always fresh, flavorful, and my customers frequently compliment the taste."</p>
+                        <div class="testimonial-author">
+                            <div class="author-img">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="James M." loading="lazy">
+                            </div>
+                            <div class="author-info">
+                                <h4>James M.</h4>
+                                <p>Restaurant Owner</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <p class="testimonial-text">"What I appreciate most is knowing the chickens are raised ethically. The farm's transparency about their practices gives me confidence I'm feeding my family healthy, responsibly-produced food."</p>
+                        <div class="testimonial-author">
+                            <div class="author-img">
+                                <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Grace K." loading="lazy">
+                            </div>
+                            <div class="author-info">
+                                <h4>Grace K.</h4>
+                                <p>Health-conscious Mother</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <p class="testimonial-text">"The delivery service is incredibly convenient. I place my order in the morning, and by afternoon I have fresh eggs and chicken at my door. The customer service is excellent too - they remember my regular order!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-img">
+                                <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Peter N." loading="lazy">
+                            </div>
+                            <div class="author-info">
+                                <h4>Peter N.</h4>
+                                <p>Busy Professional</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section partners" data-aos="fade-up">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Partners</h2>
+                    <p>Trusted businesses and organizations we work with.</p>
+                </div>
+                <div class="partners-grid">
+                    <div class="partner-item">
+                        <img src="https://via.placeholder.com/180x80?text=Hotel+Zebra" alt="Hotel Zebra" loading="lazy">
+                    </div>
+                    <div class="partner-item">
+                        <img src="https://via.placeholder.com/180x80?text=Uasin+Gishu+County" alt="Uasin Gishu County" loading="lazy">
+                    </div>
+                    <div class="partner-item">
+                        <img src="https://via.placeholder.com/180x80?text=Healthy+Kids+Initiative" alt="Healthy Kids Initiative" loading="lazy">
+                    </div>
+                    <div class="partner-item">
+                        <img src="https://via.placeholder.com/180x80?text=Local+Feed+Co" alt="Local Feed Co" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Contact Page -->
+    <section class="page" id="contact-page">
+        <section class="section contact" data-aos="fade-up">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contact Us</h2>
+                    <p>Get in touch to place orders, ask questions, or visit our farm.</p>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Let's Connect</h3>
+                        <p>We're happy to answer any questions you have about our products, farming practices, or delivery options. Reach out through any of these channels:</p>
+                        <div class="contact-details">
+                            <div class="contact-item" data-aos="fade-up" data-aos-delay="100">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Farm Location</h4>
+                                    <p>Sunview Estate Lane 20, Eldoret, Uasin Gishu County, Kenya</p>
+                                </div>
+                            </div>
+                            <div class="contact-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Call Us</h4>
+                                    <p>+254 703655416 (Philemon Sigei)</p>
+                                    <p>+254 722795231 (Bob Toroitich)</p>
+                                </div>
+                            </div>
+                            <div class="contact-item" data-aos="fade-up" data-aos-delay="300">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Email Us</h4>
+                                    <p>info@perchpoultry.co.ke</p>
+                                    <p>orders@perchpoultry.co.ke</p>
+                                </div>
+                            </div>
+                            <div class="contact-item" data-aos="fade-up" data-aos-delay="400">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Opening Hours</h4>
+                                    <p>Monday - Saturday: 8:00 AM - 6:00 PM</p>
+                                    <p>Sunday: 10:00 AM - 4:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form" data-aos="fade-up" data-aos-delay="200">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                Send Message
+                                <i class="fas fa-paper-plane btn-icon"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="map-container" data-aos="fade-up">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.752622315743!2d35.26972271475391!3d0.514599999799472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x178101ae37f5bd5d%3A0x5f2a4e1b0e8e3b0!2sEldoret%2C%20Kenya!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter" data-aos="fade-up">
+        <div class="container">
+            <div class="newsletter-container">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Stay updated with our latest products, farming practices, and special offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-secondary">
+                        Subscribe
+                        <i class="fas fa-envelope btn-icon"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>About Perch Poultry</h3>
+                    <p>Perch Poultry Farm is a family-owned operation committed to ethical, sustainable poultry farming in Eldoret, Kenya since 2010.</p>
+                    <div class="footer-social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-page="home">Home</a></li>
+                        <li><a href="#" data-page="about">About Us</a></li>
+                        <li><a href="#" data-page="products">Our Products</a></li>
+                        <li><a href="#" data-page="gallery">Gallery</a></li>
+                        <li><a href="#" data-page="testimonials">Testimonials</a></li>
+                        <li><a href="#" data-page="contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Products</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-page="products">Fresh Eggs</a></li>
+                        <li><a href="#" data-page="products">Whole Chicken</a></li>
+                        <li><a href="#" data-page="products">Chicken Parts</a></li>
+                        <li><a href="#" data-page="products">Processed Products</a></li>
+                        <li><a href="#" data-page="products">Bulk Orders</a></li>
+                        <li><a href="#" data-page="products">Special Offers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> Sunview Estate Lane 20, Eldoret, Kenya</p>
+                    <p><i class="fas fa-phone-alt" style="margin-right: 10px;"></i> +254 722795231</p>
+                    <p><i class="fas fa-envelope" style="margin-right: 10px;"></i> info@perchpoultry.co.ke</p>
+                    <p><i class="fas fa-clock" style="margin-right: 10px;"></i> Mon-Sat: 8AM-6PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Perch Poultry Farm. All Rights Reserved. | Designed with <i class="fas fa-heart" style="color: var(--accent);"></i> for Eldoret</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div class="modal" id="videoModal">
+        <div class="modal-content">
+            <div class="modal-close">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="modal-video">
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        // Initialize AOS Animation
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        const themeToggle = document.getElementById('themeToggle');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navLinks.classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+
+        // Theme Toggle
+        themeToggle.addEventListener('click', () => {
+            document.body.setAttribute('data-theme', 
+                document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+            
+            // Save preference to localStorage
+            localStorage.setItem('theme', document.body.getAttribute('data-theme'));
+            
+            // Update icon
+            themeToggle.innerHTML = document.body.getAttribute('data-theme') === 'dark' ? 
+                '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+        });
+
+        // Check for saved theme preference
+        if (localStorage.getItem('theme')) {
+            document.body.setAttribute('data-theme', localStorage.getItem('theme'));
+            themeToggle.innerHTML = localStorage.getItem('theme') === 'dark' ? 
+                '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+        }
+
+        // Smooth Scrolling for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Header Scroll Effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Page Navigation System
+        document.querySelectorAll('.nav-link, [data-page]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                if (this.hasAttribute('data-page')) {
+                    e.preventDefault();
+                    const pageId = this.getAttribute('data-page');
+                    
+                    // Hide all pages
+                    document.querySelectorAll('.page').forEach(page => {
+                        page.classList.remove('active');
+                    });
+                    
+                    // Show selected page
+                    if (pageId) {
+                        const targetPage = document.getElementById(`${pageId}-page`);
+                        if (targetPage) {
+                            targetPage.classList.add('active');
+                            window.scrollTo(0, 0);
+                        }
+                    }
+                    
+                    // Update active nav link
+                    document.querySelectorAll('.nav-link').forEach(navLink => {
+                        navLink.classList.remove('active');
+                    });
+                    
+                    if (this.classList.contains('nav-link')) {
+                        this.classList.add('active');
+                    }
+                }
+                
+                // Close mobile menu if open
+                if (navLinks.classList.contains('active')) {
+                    navLinks.classList.remove('active');
+                    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+            });
+        });
+
+        // Testimonials Slider
+        $(document).ready(function(){
+            $('#testimonials-slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                arrows: false
+            });
+        });
+
+        // Stats Counter Animation
+        function animateValue(id, start, end, duration) {
+            const obj = document.getElementById(id);
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                const value = Math.floor(progress * (end - start) + start);
+                obj.innerHTML = value + (id === 'happyCustomers' || id === 'eggsProduced' ? '+' : '');
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        }
+
+        // Animate stats when they come into view
+        const statsSection = document.querySelector('.stats');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateValue('happyCustomers', 0, 5000, 2000);
+                    animateValue('eggsProduced', 0, 2000000, 2000);
+                    animateValue('farmSize', 0, 50, 1500);
+                    animateValue('yearsExperience', 0, 13, 1500);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        observer.observe(statsSection);
+
+        // Video Modal
+        const videoThumbnail = document.getElementById('videoThumbnail');
+        const videoModal = document.getElementById('videoModal');
+        const modalClose = document.querySelector('.modal-close');
+
+        if (videoThumbnail) {
+            videoThumbnail.addEventListener('click', () => {
+                videoModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        }
+
+        modalClose.addEventListener('click', () => {
+            videoModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+
+        videoModal.addEventListener('click', (e) => {
+            if (e.target === videoModal) {
+                videoModal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Contact Form Submission
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form values
+                const formData = new FormData(this);
+                const data = {};
+                formData.forEach((value, key) => {
+                    data[key] = value;
+                });
+                
+                // Here you would typically send the data to a server
+                console.log('Form submitted:', data);
+                
+                // Show success message with animation
+                const submitBtn = this.querySelector('button[type="submit"]');
+                submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+                submitBtn.style.backgroundColor = '#4CAF50';
+                
+                setTimeout(() => {
+                    submitBtn.innerHTML = 'Send Message <i class="fas fa-paper-plane btn-icon"></i>';
+                    submitBtn.style.backgroundColor = '';
+                }, 3000);
+                
+                this.reset();
+            });
+        }
+
+        // Newsletter Form Submission
+        const newsletterForm = document.querySelector('.newsletter-form');
+        if (newsletterForm) {
+            newsletterForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const email = this.querySelector('input[type="email"]').value;
+                
+                // Here you would typically send the email to your mailing list
+                console.log('Newsletter subscription:', email);
+                
+                // Show success message
+                this.querySelector('input[type="email"]').value = '';
+                const submitBtn = this.querySelector('button[type="submit"]');
+                const originalText = submitBtn.innerHTML;
+                
+                submitBtn.innerHTML = '<i class="fas fa-check"></i> Subscribed!';
+                submitBtn.style.backgroundColor = '#4CAF50';
+                
+                setTimeout(() => {
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.style.backgroundColor = '';
+                }, 3000);
+            });
+        }
+
+        // Lazy Loading Images
+        const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+        
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.getAttribute('data-src') || img.src;
+                        img.removeAttribute('loading');
+                        observer.unobserve(img);
+                    }
+                });
+            }, { rootMargin: '200px 0px' });
+
+            lazyImages.forEach(img => {
+                imageObserver.observe(img);
+            });
+        }
+    </script>
+</body>
+</html>
